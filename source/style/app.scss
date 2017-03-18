@@ -1,0 +1,26 @@
+$responsive: true;
+
+/* --------- colors --------- */
+
+$yellow: #f1ca14;
+$black: #2d2d31;
+
+/* --------- adjustment --------- */
+
+@import "_misc/font-awesome";
+@import "_misc/fonts";
+@import "_misc/mixins";
+@import "_misc/adjustment";
+
+/* --------- common --------- */
+
+@import "common/index";
+@import "common/accordion";
+
+/* --------- sections --------- */
+
+@import "section/dobrivo/header";
+@import "section/dobrivo/nav";
+@import "section/dobrivo/form";
+@import "section/dobrivo/promo";
+// @import "sections/**/*";

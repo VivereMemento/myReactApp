@@ -1,0 +1,98 @@
+.form-wrap {
+  width: 280px;
+  margin-top: -150px;
+  margin-right: 20px;
+  padding: 15px;
+  background: #f2f3ee;
+  border: 2px dashed #a7a9ac;
+  box-shadow: 0 0 0 10px #e9e5e4;
+  display: inline-block;
+}
+
+.form__heading-wrap {
+  margin-bottom: 15px;
+}
+
+.form__heading {
+  margin: 0;
+  @include roboto($style : regular);
+  font-size: 36px;
+  font-weight: 700;
+  color: #25383f;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__subheading-wrap {
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+
+  &:before {
+    display: block;
+    content: '';
+    width: 150px;
+    height: 2px;
+    margin: 0 auto;
+    background: #d1d3d4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateY(35px);
+  }
+}
+
+.form__subheading {
+  @include roboto($style : regular);
+  font-size: 14px;
+  color: #25383f;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__input-wrap {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form__label {
+  @include roboto($style : regular);
+  font-size: 14px;
+  font-weight: 300;
+  color: #25383f;
+  line-height: 18px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #d1d3d4;
+  border-radius: 2px;
+}
+
+.form__promo {
+  text-align: center;
+}
+
+.form__promo-title {
+  display: block;
+  @include roboto($style : regular);
+  font-size: 14px;
+  font-weight: 300;
+  color: #d26441;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.form__promo-count {
+  display: block;
+  @include roboto($style : regular);
+  font-size: 47px;
+  font-weight: 700;
+  color: #d26441;
+  line-height: 38px;
+  text-transform: uppercase;
+}

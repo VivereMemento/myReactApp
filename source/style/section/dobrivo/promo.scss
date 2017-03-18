@@ -1,0 +1,140 @@
+.promo {
+  background: url(../img/colos.png) no-repeat top right;
+  background-size: 550px;
+}
+
+.promo__left, .promo__right {
+  float: left;
+}
+
+.promo__left {
+  width: 60%;
+  padding: 20px 0 50px 0;
+}
+
+.promo__right {
+  width: 40%;
+  text-align: right;
+}
+
+.promo__statistic {
+  @include clearfix;
+}
+
+.promo__img-wrap {
+  width: 205px;
+  height: 380px;
+  margin: -70px 35px 0 0;
+  float: left;
+}
+
+.promo__statistic-list {
+  float: left;
+}
+
+.promo__statistic-item {
+  margin-bottom: 25px;
+}
+
+.promo__statistic-title,
+.promo__statistic-subtitle,
+.promo__statistic-percent {
+  display: block;
+  text-indent: 40px;
+}
+
+.promo__statistic-title {
+  margin-bottom: 5px;
+  @include roboto($style : regular);
+  font-size: 25px;
+  font-weight: 700;
+  color: #4d4545;
+  line-height: 19px;
+  text-transform: uppercase;
+  position: relative;
+
+  &:before {
+    display: block;
+    content: '';
+    width: 35px;
+    height: 35px;
+    background: url(../img/star.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: -10px;
+    left: 0;
+  }
+}
+
+.promo__statistic-subtitle {
+  margin-bottom: 5px;
+  @include roboto($style : regular);
+  font-size: 11px;
+  font-weight: 400;
+  color: #a7a9ac;
+  line-height: 13px;
+}
+
+.promo__statistic-percent {
+  @include roboto($style : regular);
+  font-size: 25px;
+  font-weight: 400;
+  color: #c49a6c;
+  line-height: 19px;
+}
+
+.promo__learn {
+  width: 100%;
+  float: left;
+  @include clearfix;
+
+  &-left {
+    width: 35%;
+    float: left;
+    text-align: right;
+  }
+
+  &-right {
+    width: 65%;
+    padding-left: 20px;
+    float: left;
+  }
+
+  &-text {
+    display: block;
+    @include roboto($style : regular);
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+  }
+
+  &-title {
+    margin: 0 0 40px 0;
+    @include roboto($style : regular);
+    font-size: 42px;
+    font-weight: 700;
+    color: #25383f;
+    line-height: 48px;
+    text-transform: uppercase;
+
+    &_mods {
+      display: block;
+    }
+  }
+
+  &-btn {
+    padding: 15px 22px;
+    @include roboto($style : regular);
+    font-size: 23px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 4px solid black;
+
+    &:hover {
+      color: white;
+      background: black;
+    }
+  }
+}

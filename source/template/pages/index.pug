@@ -1,0 +1,18 @@
+extends ../_template
+
+block variables
+  - var title = 'React page'
+
+block content
+  .menu
+    -
+      const menuItems = [
+                          {link: "accordion.html", name: "Accordion"},
+                          {link: "dobrivo.html", name: "Dobrivo"}
+                        ]
+    
+    ul.menu__list
+      each menuItem in menuItems
+        li.menu__item
+          a.menu__link(href="" + menuItem.link) #{menuItem.name}
+    

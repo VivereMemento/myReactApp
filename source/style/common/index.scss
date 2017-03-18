@@ -1,0 +1,10 @@
+.menu {
+  text-align: center;
+
+  &__link {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include bern($style : regular);
+  }
+}
